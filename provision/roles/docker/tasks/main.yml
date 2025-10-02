@@ -33,12 +33,7 @@
         state: started
         enabled: yes
 
-    # Install Docker Compose Plugin (integrated with Docker)
-    - name: Install Docker Compose Plugin
-      apt:
-        name: docker-compose-plugin
-        state: present
-
+   
     # Verify Docker installation
     - name: Verify Docker installation
       command: docker --version
